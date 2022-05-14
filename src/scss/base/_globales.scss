@@ -1,0 +1,35 @@
+@use 'variables' as var;
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    font-family: var.$theme-font;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 6rem;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 3.5rem;
+    color: var.$blue;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    font-size: 2.5rem;
+    border: none;
+}
