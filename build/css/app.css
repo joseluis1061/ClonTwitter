@@ -354,13 +354,13 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6.2rem;
+  font-weight: bold;
   line-height: 1.2;
 }
 
 h2 {
   font-size: 3.5rem;
-  color: #1d9bf0;
 }
 
 p {
@@ -370,9 +370,56 @@ p {
 
 a {
   text-decoration: none;
+  color: #000000;
+}
+
+.container {
+  max-width: 960px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.paddin-none {
+  padding: 0;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.mg-top {
+  margin-top: 25px;
+}
+
+.mg-button {
+  margin-top: 25px;
+}
+
+.pd-top {
+  margin-top: 25px;
+}
+
+.pd-button {
+  margin-top: 25px;
 }
 
 .button {
-  font-size: 2.5rem;
+  max-width: 700px;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  border-radius: 35px;
+  border: 1px solid #cfd9de;
+}
+
+.button-blue {
+  color: #FFFFFF;
+  background-color: #1d9bf0;
   border: none;
+}
+
+.button-secundary {
+  color: #1d9bf0;
 }
