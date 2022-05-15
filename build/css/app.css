@@ -354,15 +354,25 @@ body {
 }
 
 h1 {
-  font-size: 6.2rem;
+  font-size: 3.8rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1;
 }
 
+@media (min-width: 500px) {
+  h1 {
+    font-size: 5.8rem;
+  }
+}
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
 }
 
+@media (min-width: 500px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -404,11 +414,11 @@ a {
 }
 
 .button {
-  max-width: 700px;
+  max-width: 300px;
   display: block;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 35px;
   border: 1px solid #cfd9de;
