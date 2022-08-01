@@ -354,27 +354,36 @@ body {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 @media (min-width: 500px) {
   h1 {
-    font-size: 5.8rem;
+    font-size: 4.8rem;
   }
 }
 h2 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
 }
 
 @media (min-width: 500px) {
   h2 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+  }
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 500px) {
+  h3 {
+    font-size: 2rem;
   }
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -384,8 +393,9 @@ a {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   min-width: 300px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -393,7 +403,7 @@ a {
   padding: 0;
 }
 
-.margin-none {
+.mg-none {
   margin: 0;
 }
 
@@ -413,15 +423,23 @@ a {
   margin-top: 25px;
 }
 
+.color-blue {
+  color: #1d9bf0;
+}
+
 .button {
   max-width: 300px;
+  height: 38px;
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
   border-radius: 35px;
   border: 1px solid #cfd9de;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .button-blue {
@@ -432,4 +450,33 @@ a {
 
 .button-secundary {
   color: #1d9bf0;
+}
+
+.main {
+  margin: 30px 30px;
+}
+
+.icon-header {
+  margin: 0;
+  padding: 0;
+}
+.icon-header i {
+  font-size: 3.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main--background {
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png");
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

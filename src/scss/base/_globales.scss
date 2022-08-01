@@ -14,30 +14,37 @@ body{
 }
 
 h1{
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.2;
 }
 @include mix.phone{
     h1{
-        font-size: 5.8rem;
+        font-size: 4.8rem;
     }
 }
-
-
 h2{
-    font-size: 2.8rem;
+    font-size: 2.2rem;
 }
 
 @include mix.phone{
     h2{
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
 }
 
+h3{
+    font-size: 1.5rem;
+}
+
+@include mix.phone{
+    h3{
+        font-size: 2rem;
+    }
+}
 
 p{
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 1.4;
 }
 a{
@@ -46,14 +53,15 @@ a{
 }
 
 .container{
-    max-width: 960px;
+    max-width: 1000px;
     min-width: 300px;
+    width: 90%;
     margin: 0 auto;
 }
 .paddin-none{
     padding: 0;
 }
-.margin-none{
+.mg-none{
     margin: 0;
 }
 .mg-top{
@@ -68,16 +76,22 @@ a{
 .pd-button{
     margin-top: 25px;
 }
-
-.button{
+.color-blue{
+    color: var.$blue;
+}
+.button{    
     max-width: 300px;
+    height: 38px;
     display: block;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 35px;
     border: 1px solid var.$border-gray;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .button-blue{
     color: var.$white;
@@ -86,13 +100,4 @@ a{
 }
 .button-secundary{
     color: var.$blue;
-}
-
-
-
-
-
-
-.main--background{
-    background: url("https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png");
 }
